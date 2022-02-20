@@ -22,7 +22,7 @@ while win == False:
     guessN += 1
     print("Guesses: " + str(guessN))
     if (guessN == 1):
-        guess = "salet"
+        guess = "crate"
         guess = [char for char in guess]
         wordArray = [char for char in word]
 
@@ -43,7 +43,7 @@ while win == False:
         if (guess == wordArray):
             print("You won!")
             win = True  
-        time.sleep(1)
+        time.sleep(0.5)
     else:
         possible = []
         guessArray = guess
@@ -145,7 +145,7 @@ while win == False:
         else:
             print("Guess Invalid!")
         
-        time.sleep(1)
+        time.sleep(0.5)
 
     except ValueError:
         print("Guess Invalid!")
