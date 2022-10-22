@@ -8,7 +8,6 @@ word = words[random.randint(0, len(words) - 1)]
 #print(word)
 
 while win == False:
-    os.system("cls")
     guess = input("Input a guess: ")
 
     try:
@@ -27,6 +26,7 @@ while win == False:
                     guessColor = guessColor + guess[i]
 
             guesses.append(guessColor)
+            os.system("cls")
             for i in guesses:
                 print(i)
             if (guess == wordArray):
